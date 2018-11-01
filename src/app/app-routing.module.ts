@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'csvToJson', component: CsvToJsonComponent },
   { path: 'jsonToCSV', component: JsonToCsvComponent },
   { path: 'formatJson', component: FormatJsonComponent },
+  {path: '', redirectTo: '/csvToJson', pathMatch: 'full'},
 ];
 
 @NgModule({
