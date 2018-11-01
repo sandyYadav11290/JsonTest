@@ -1,0 +1,16 @@
+<div class="row">
+  <mat-card class="card">
+    <div class=header>
+        CSV to JSON Converter
+    </div>
+    <mat-card-content>
+      <p>Paste Your CSV Here:(Enter only values as comma separated)</p>
+      <textarea id="csv" class="text" [(ngModel)]="csvText"></textarea>
+      <p>Result</p>
+      <textarea id="json" class="text" [(ngModel)]="jsonText"></textarea>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button id="convert" (click)="convert()">Convert to JSON</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

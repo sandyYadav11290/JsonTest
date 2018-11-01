@@ -1,0 +1,16 @@
+<div class="row">
+    <mat-card class="card">
+      <div class=header>
+          JSON Format
+      </div>
+      <mat-card-content>
+        <p>Paste Your JSON Here</p>
+        <textarea class="text" [(ngModel)]="jsonText"></textarea>
+        <p>Result</p>
+        <textarea class="text" [(ngModel)]="formattedText"></textarea>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button id="convert" (click)="JSONstringify()">Format</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
